@@ -6,6 +6,9 @@ const SiteHeading = styled.div`
   text-align:center;
   margin-top:30px;
   color: #046B99;
+  a{
+    color: #046B99;
+  }
 `
 
 const NavWrapper = styled.div`
@@ -29,7 +32,10 @@ const Header = () => {
   return (
     <React.Fragment>
       <SiteHeading>
-        <h1>Hacker News Clone</h1>
+        <NavLink to="/hacker-news-clone/" activeClassName="active">
+          <h1>Hacker News Clone</h1>
+        </NavLink>
+        
       </SiteHeading>
       <NavWrapper className="nav-link">
         <NavLink to="/top" activeClassName="active">
